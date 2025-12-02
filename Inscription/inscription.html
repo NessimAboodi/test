@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineForAll - Inscription</title>
+    <!-- Assurez-vous que le lien vers votre CSS est correct -->
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    <div class="container-connexion">
+        <div class="bloc-branding">
+            <!-- Image du logo -->
+            <img src="img/logo.jpeg" alt="Logo CineForAll" class="logo-connexion">
+            
+            <h2 class="titre-bienvenue">REJOIGNEZ CINEFORALL</h2>
+            
+            <p class="texte-bienvenue">
+                Créez votre compte pour réserver vos séances de cinéma en quelques clics !
+            </p>
+        </div>
+
+        <div class="bloc-formulaire">
+            <h1 class="titre-connexion">Inscription</h1>
+            
+            <form action="/inscription" method="POST" class="form-connexion">
+                <!-- Nouveau Champ: Nom d'utilisateur -->
+                <div class="champ-groupe">
+                    <label for="username" class="label-cache">Nom d'utilisateur</label>
+                    <input type="text" id="username" name="username" placeholder="Nom d'utilisateur" required autocomplete="username">
+                </div>
+
+                <!-- Champ: E-mail (anciennement Identifiant/E-mail) -->
+                <div class="champ-groupe">
+                    <label for="email" class="label-cache">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Adresse E-mail" required autocomplete="email">
+                </div>
+                
+                <!-- Champ: Mot de passe -->
+                <div class="champ-groupe">
+                    <label for="password" class="label-cache">Mot de passe</label>
+                    <input type="password" id="password" name="password" placeholder="Mot de passe" required autocomplete="new-password">
+                </div>
+
+                <!-- Nouveau Champ: Confirmer le mot de passe -->
+                <div class="champ-groupe">
+                    <label for="confirm_password" class="label-cache">Confirmer le mot de passe</label>
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirmer le mot de passe" required autocomplete="new-password">
+                </div>
+
+                <!-- L'ancienne div .lien-oublie (Mot de passe oublié) est retirée -->
+                
+                <button type="submit" class="btn-connexion">CRÉER UN COMPTE</button>
+            </form>
+
+            <p class="lien-inscription">
+                Déjà membre ? <a href="connexion.html">Connectez-vous</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

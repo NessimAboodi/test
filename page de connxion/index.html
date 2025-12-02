@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineForAll - Connexion</title>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+    <div class="container-connexion">
+        <div class="bloc-branding">
+            <img src="img/logo.jpeg" alt="Logo CineForAll" class="logo-connexion">
+            
+            <h2 class="titre-bienvenue">BIENVENUE CHEZ CINEFORALL</h2>
+            
+            <p class="texte-bienvenue">
+           
+            </p>
+        </div>
+
+        <div class="bloc-formulaire">
+            <h1 class="titre-connexion">Connexion</h1>
+            
+            <form action="/connexion" method="POST" class="form-connexion">
+                <div class="champ-groupe">
+                    <label for="identifiant" class="label-cache">Identifiant ou E-mail</label>
+                    <input type="text" id="identifiant" name="identifiant" placeholder="Identifiant ou E-mail" required>
+                </div>
+
+                <div class="champ-groupe">
+                    <label for="mot_de_passe" class="label-cache">Mot de passe</label>
+                    <input type="password" id="mot_de_passe" name="mot_de_passe" placeholder="Mot de passe" required>
+                </div>
+
+                <div class="lien-oublie">
+              
+                </div>
+
+                <button type="submit" class="btn-connexion">SE CONNECTER</button>
+            </form>
+
+            <p class="lien-inscription">
+                Pas encore membre ? <a href="/inscription">Créez un compte</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineForAll - Réservation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="img/logo.jpeg" alt="Logo CineForAll" class="logo">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="recherche-film.html">Films</a></li>
+                <li><a href="recherche-acteur.html">Acteurs</a></li>
+                <li><a href="reservation.html" class="cta-reservation">Réservation</a></li> 
+                <li><a href="connexion.html" class="cta-login">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reservation-form-section">
+            <h2>Réserver vos places</h2>
+            
+            <form action="/traitement-reservation" method="POST" class="reservation-form">
+                
+                <div class="form-group">
+                    <label for="film-select">Film :</label>
+                    <select id="film-select" name="film" required>
+                        <option value="">-- Choisissez un film --</option>
+                        <option value="until-dawn">Until Dawn</option>
+                        <option value="chainsaw-man">Chainsaw Man</option>
+                        <option value="john-wick">John Wick</option>
+                        </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="date-select">Date et Séance :</label>
+                    <input type="datetime-local" id="date-select" name="seance" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tickets">Nombre de places :</label>
+                    <input type="number" id="tickets" name="tickets" min="1" max="10" value="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Votre Email :</label>
+                    <input type="email" id="email" name="email" placeholder="email@exemple.com" required>
+                </div>
+
+                <button type="submit" class="cta-button submit-reservation">Confirmer la Réservation</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 CineForAll - Tous droits réservés.</p>
+        <p>Projet réalisé par Demon Dev</p>
+    </footer>
+</body>
+</html>
